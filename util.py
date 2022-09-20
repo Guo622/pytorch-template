@@ -7,7 +7,7 @@ from dataset import ExampleDataset
 from transformers import AdamW, get_cosine_schedule_with_warmup
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, random_split
 
-def setup_seed(seed):
+def setup_seed(seed=3407):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
